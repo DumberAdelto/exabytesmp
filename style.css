@@ -1,6 +1,6 @@
 :root {
-    --tsize: 8vw;
-    --stsize: 1.5vw;
+    --tsize: calc(28px + 8vw);
+    --stsize: calc(12px + 1.5vw);
 }
 
 ::selection {
@@ -21,6 +21,27 @@ html {
 
 h1 {
     margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: cornflowerblue;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 600px) {
+    .joinInner {
+        border-radius: 0px !important;
+    }
+
+    #ver {
+        float: none;
+        margin: 0;
+    }
+    #ip {
+        float: none;
+        margin: 0;
+    }
 }
 
 /* main css */
