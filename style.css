@@ -45,7 +45,7 @@ a {
 }
 
 code {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.2);
     padding: 5px;
     border-radius: 5px;
 }
@@ -59,21 +59,22 @@ code {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(media/spawn.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     color: white !important;
+    background-color: black;
 }
 
-#hero1dimmer {
+#hero1image {
     width: 100%;
     height: 100%;
-    background-color: rgb(4, 16, 73);
     z-index: 1;
     position: absolute;
     opacity: 0.5;
     box-shadow: inset 0px -30px 30px -10px rgb(19, 52, 235);
+    background-image: url(media/spawn.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
 }
 
 #hero1inner {
